@@ -1,4 +1,3 @@
-mod types;
 mod handler;
 
 use to_binary::{BinaryString,BinaryError};
