@@ -20,8 +20,10 @@ Or, by using github:
 Currently, there is no more documentation/instructions for the Rust version, however there is still some information below:
 Of course, you need an understanding of Rust. In theory, you don't need to know too much, but you need to know it.
 
-Learn more about this project, ask for help, and report bugs on our Discord server below.
+Learn more about this project, ask for help, and report bugs on BRCI's Discord server below.
 https://discord.gg/sZXaESzDd9
+This varient of BRCI is under ANC's 'Zim' umbrella, whom's Discord server is also below.
+https://discord.gg/fkTmmy6tk7
 
 # Credits
 Main name (Other name(s), ping on the BRCI Discord server) - Role in project
