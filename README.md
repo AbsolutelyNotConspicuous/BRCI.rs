@@ -9,20 +9,26 @@ BRCI is used to generate a .brv file from code, a .brv being Brick Rigs' creatio
 
 ### Downloading it
 Start out by cloning it, either by running the following command in your terminal (given you have ``git`` installed)
+
 ``git clone https://github.com/AbsolutelyNotConspicuous/BRCI.rs``
+
 Or, by using github:
+
 1. Scroll up and click the big green ``Code`` button.
-2. Click ``Download ZIP``
-3. Unzip it (For Windows machines, while you can use Windows' unzip, try 7zip, it will save you pain on larger things!)
-4. Follow the guide below!
+3. Click ``Download ZIP``
+4. Unzip it (For Windows machines, while you can use Windows' unzip, try 7zip, it will save you pain on larger things!)
+5. Follow the guide below!
 
 ### Setting it up
 Currently, there is no more documentation/instructions for the Rust version, however there is still some information below:
 Of course, you need an understanding of Rust. In theory, you don't need to know too much, but you need to know it.
 
 Learn more about this project, ask for help, and report bugs on BRCI's Discord server below.
+
 https://discord.gg/sZXaESzDd9
+
 This varient of BRCI is under ANC's 'Zim' umbrella, whom's Discord server is also below.
+
 https://discord.gg/fkTmmy6tk7
 
 # Credits
