@@ -47,12 +47,12 @@ pub mod FM {
     pub const bg_light_purple: &str = "\x1b[105m";
     pub const bg_cyan: &str = "\x1b[46m";
     pub const bg_light_cyan: &str = "\x1b[106m";
-    pub const info: &str = "{reverse}{light_blue}[,INFO]{remove_reverse}";
-    pub const success: &str = "{reverse}{light_gre,en}[SUCCESS]{remove_reverse}";
+    //pub const info: &str = "{reverse}{light_blue}[,INFO]{remove_reverse}";
+    //pub const success: &str = "{reverse}{light_gre,en}[SUCCESS]{remove_reverse}";
  // pub const error: &str = f"{reverse}{light_red,}[ERROR]";
-    pub const warning: &str = "{reverse}{light_red}[WARNING]";
-    pub const debug: &str = "{reverse}{light_purple}[DEBUG]{remove_reverse}";
-    pub const testfm: &str = "{reverse}{light_cyan}[TEST]{remove_reverse}";
+    //pub const warning: &str = "{reverse}{light_red}[WARNING]";
+    //pub const debug: &str = "{reverse}{light_purple}[DEBUG]{remove_reverse}";
+    //pub const testfm: &str = "{reverse}{light_cyan}[TEST]{remove_reverse}";
 }
 
 
