@@ -2,9 +2,9 @@ mod handler;
 #[allow(unused_imports)]
 use to_binary::{BinaryString,BinaryError};
 #[macro_use] mod misc;
-use misc::{FM/*, FM::**/}; // The glob operator can be used but is dangerous if you do not know what you are doing.
+use misc::FM; // The glob operator can be used but is dangerous if you do not know what you are doing.
 
-const VERSION: &str = "V0.3.0";
+const VERSION: &str = "V0.3.7";
 
 /* Semantic versioning.
 Scheme goes like this:
@@ -15,7 +15,7 @@ Third number: Smaller update, usually a hotfix or patch */
 
 fn main() {
     printlnr!("\n✨ {}Welcome to BRCI.rs!", FM::light_green);
-    printlnr!("{}📋Program version: [{VERSION}]\n", FM::light_blue);
+    printlnr!("📋 {}Program version: [{VERSION}]\n", FM::light_blue);
     
     // It is my belief that this structure shouldn't be used. Not in the current state.
     /* #[allow(dead_code)]
@@ -33,6 +33,16 @@ fn main() {
         
     }
     */
-    #[allow(unused_variables)]
-    let make_proj_result = handler::make_project("Test", "Projects");
+    let project_name: &str = "Test";
+    let project_dir: &str = "Projects";
+    let make_proj_result = match handler::make_project(project_name, project_dir) {
+        Ok(_) => "Success".to_string(),
+        Err(val) => val.to_string(),
+    };
+
+    if make_proj_result == "Success" {
+        printlnr!("✅ {}Project created successfully!", FM::light_green);
+    } else {
+        printlnr!("❌ {}Failed to create project!\n'{}'", FM::light_red, make_proj_result);
+    }
 }
