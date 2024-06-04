@@ -28,7 +28,7 @@ jobs:
     - uses: actions/checkout@v4
     - name: Enable Cargo Cache
       uses: Swatinem/rust-cache@v2.7.3
-    - name: Compile and release
+    - name: Compile
       uses: rust-build/rust-build.action@v1.4.5
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -42,5 +42,5 @@ jobs:
       with:
         name: Binary
         path: |
-          ${{ steps.compile.outputs.BUILT_ARCHIVE }}
-          ${{ steps.compile.outputs.BUILT_CHECKSUM }}
+          ${{ steps.Compile.outputs.BUILT_ARCHIVE }}
+          ${{ steps.Compile.outputs.BUILT_CHECKSUM }}
